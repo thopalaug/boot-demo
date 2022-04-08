@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class DemoController {
 
     @ResponseBody
-    @GetMapping("demo")
+    @GetMapping("home")
     public String demo(){
         return "Hello Demo";
     }
 
-    @GetMapping("welcome")
+    @GetMapping("home2")
     public String welcome(Model model){
         model.addAttribute("message", "welcome to the demo");
         return "welcome";
